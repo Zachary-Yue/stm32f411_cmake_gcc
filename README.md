@@ -1,6 +1,7 @@
 # 找到宝藏了
 
-cmake 开发 stm32。超级优雅、超级迅速、超级舒适。
+cmake 开发 stm32。超级优雅、超级迅速、超级舒适。  
+本工程以 STM32F411CEU6 为例，介绍使用 CubeMX + VS Code + CMake + Ninja + OpenOCD 开发、调试 STM32 系列芯片的一种方法。
 
 ## 一、创建工程
 
@@ -10,7 +11,7 @@ CubeMX 选择 cmake。本工程用的是 GCC，不过我觉得这已经够了。
 
 ### 1 先决条件
 
-- 用 scoop 安装 cmake、ninja、openocd（scoop 真的太重要了，感谢劳丁在大二上学期给我的推荐，真的超级有用）
+- 用 scoop 安装 cmake、ninja、openocd（scoop 真的太重要了，感谢 [Shetty](https://github.com/Yttehs-HDX) 在大二上学期给我的推荐，真的超级有用）
 - VS Code 安装插件：**C/C++、CMake Tools、Cortex-Debug**
 
 ### 2 第一次使用

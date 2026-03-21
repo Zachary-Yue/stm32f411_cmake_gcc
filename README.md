@@ -16,8 +16,7 @@ CubeMX 选择 cmake。本工程用的是 GCC，不过我觉得这已经够了。
 
 ### 2 第一次使用
 
-按照提示来就行。甚至不用自己指定 cmake 和 ninja 的路径，因为 cmake tools 会自动扫描。  
-第一次使用看看 cmake tools 有哪些命令（任务）（`Ctrl + Shift + P` 输入 “cmake:” 看一看就好了）。
+按照提示来就行。甚至不用自己指定 cmake 和 ninja 的路径，因为 cmake tools 会自动扫描。第一次使用看看 cmake tools 有哪些命令（任务）（`Ctrl + Shift + P` 输入 “cmake:” 看一看就好了）。
 
 ### 3 用法
 
@@ -49,11 +48,9 @@ add_custom_target(flash
 
 上面 `set(OPENOCD_INTERFACE interface/stlink.cfg)` 中的 `stlink` 可以改为 `jlink` `cmsis-dap` 等。
 
-然后在左侧控制栏的 cmake 中的项目大纲中可以看到，test_cmake_gcc 下面多了一个 *flash（实用工具）*，  
-也可以在命令面板中的 `cmake: build target` 中选择 新添加的 `flash` 以下载。
+然后在左侧控制栏的 cmake 中的项目大纲中可以看到，test_cmake_gcc 下面多了一个 *flash（实用工具）*，也可以在命令面板中的 `cmake: build target` 中选择 新添加的 `flash` 以下载。
 
-下载的快捷键：`Shift + F7` （cmake: build target），然后选择 `flash`。  
-（注：下载之前，假设代码更新了，它会自动重新编译一遍哦！）
+下载的快捷键：`Shift + F7` （cmake: build target），然后选择 `flash`。（注：下载之前，假设代码更新了，它会自动重新编译一遍。）
 
 #### 3.4 调试
 
@@ -90,8 +87,7 @@ launch.json 示例：
 
 #### 3.5 注意
 
-`CmakePresets.json` 文件是 CubeMX 生成的，当你在 Command Palatte 中选择 “更改xx预设” 时可能会改变这个文件，  
-注意不要直接删除它了。需要这个文件才能正确构建。
+`CmakePresets.json` 文件是 CubeMX 生成的，当你在 Command Palatte 中选择 “更改xx预设” 时可能会改变这个文件，注意不要直接删除它了。需要这个文件才能正确构建。
 
 #### 3.6 添加文件夹
 
@@ -162,6 +158,4 @@ endfunction()
 register_module(Application/key)
 ```
 
-这样一来，module 的写法就是：任意一个地方的文件夹，src 文件可以任意放置，.h 文件在该文件夹目录下。  
-和 ESP32 的 component 非常像。唯一不同的是这里的 module 没有相互引用的概念，全部是公开的，所有模块  
-都可以相互调用对方的 API。这其实和 Makefile 管理的工程差不多，但是有一点好处就是更清楚。
+这样一来，module 的写法就是：任意一个地方的文件夹，src 文件可以任意放置，.h 文件在该文件夹目录下。和 ESP32 的 component 非常像。唯一不同的是这里的 module 没有相互引用的概念，全部是公开的，所有模块都可以相互调用对方的 API。这其实和 Makefile 管理的工程差不多，但是有一点好处就是更清楚。

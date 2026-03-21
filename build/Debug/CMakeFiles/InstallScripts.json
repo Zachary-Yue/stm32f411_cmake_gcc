@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Embedded/Projects/stm32f411/CMake/test_cmake_gcc/build/Debug/cmake_install.cmake",
+		"D:/Embedded/Projects/stm32f411/CMake/test_cmake_gcc/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

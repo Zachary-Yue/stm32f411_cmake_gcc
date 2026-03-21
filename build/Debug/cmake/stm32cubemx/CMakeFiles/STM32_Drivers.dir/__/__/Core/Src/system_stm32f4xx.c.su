@@ -1,0 +1,2 @@
+D:/Embedded/Projects/stm32f411/CMake/test_cmake_gcc/Core/Src/system_stm32f4xx.c:167:6:SystemInit	4	static
+D:/Embedded/Projects/stm32f411/CMake/test_cmake_gcc/Core/Src/system_stm32f4xx.c:220:6:SystemCoreClockUpdate	32	static

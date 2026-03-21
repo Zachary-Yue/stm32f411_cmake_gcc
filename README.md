@@ -1,6 +1,6 @@
-# 找到宝藏了
+# 使用 CMake 开发 STM32
 
-cmake 开发 stm32。超级优雅、超级迅速、超级舒适。  
+找到宝藏了。CMake 开发 STM32。超级优雅、超级迅速、超级舒适。  
 本工程以 STM32F411CEU6 为例，介绍使用 CubeMX + VS Code + CMake + Ninja + OpenOCD 开发、调试 STM32 系列芯片的一种方法。
 
 ## 一、创建工程

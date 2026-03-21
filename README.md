@@ -158,4 +158,4 @@ endfunction()
 register_module(Application/key)
 ```
 
-这样一来，module 的写法就是：任意一个地方的文件夹，src 文件可以任意放置，.h 文件在该文件夹目录下。和 ESP32 的 component 非常像。唯一不同的是这里的 module 没有相互引用的概念，全部是公开的，所有模块都可以相互调用对方的 API。这其实和 Makefile 管理的工程差不多，但是有一点好处就是更清楚。
+这样一来，module 的写法就是：任意一个地方的文件夹，src 文件可以任意放置，.h 文件在该文件夹目录下。和 ESP32 的 component 非常像。唯一不同的是这里的 module 没有相互依赖的概念，全部是公开的，所有模块都可以相互调用对方的 API。这其实和 Makefile 管理的工程差不多，但是有一点好处就是更清楚。

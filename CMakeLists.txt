@@ -67,6 +67,8 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     # Add user defined libraries
 )
 
+# -------------------------------------------------------------------------
+
 # Add custom target for flashing the firmware using OpenOCD
 set(OPENOCD_INTERFACE interface/stlink.cfg)     # 这里根据烧录器类型来改
 set(OPENOCD_TARGET target/stm32f4x.cfg)         # 这里根据芯片型号来改
